@@ -27,3 +27,33 @@ The code for this practice is available in this repository. We invite you to exp
 The results of our practice will be presented in the form of graphs and analysis in the corresponding notebook. This will include the evaluation of the fit quality and predictive ability of our Machine Learning model.
 
 We hope you find this practice interesting and that it helps you better understand how Machine Learning models can be applied to real prediction problems in the field of finance.
+
+# Práctica de Aprendizaje Automático: Predicción Financiera con Modelos Lineales, KNN y Árboles de Decisión
+
+## Objetivo
+
+El objetivo de esta práctica es aplicar los conceptos aprendidos sobre la construcción de modelos lineales, K-Vecinos más Cercanos (KNN) y árboles de decisión a un problema de predicción dinámica en un contexto financiero. El estudiante debería ser capaz de implementar estos modelos de Aprendizaje Automático en Python, incluyendo las métricas asociadas y otros análisis.
+
+## Planteamiento
+
+Esta práctica propone el uso y análisis de un modelo de Aprendizaje Automático e ilustra cómo algunos modelos de Aprendizaje Automático pueden ser utilizados en problemas de modelización dinámica, contextualizando los conceptos vistos. Se espera que el alumno desarrolle una visión crítica sobre el modelo.
+
+El problema es un problema de predicción dinámica. El alumno deberá utilizar datos del S&P500 de Yahoo Finance:
+
+[Precios Históricos del S&P500](http://finance.yahoo.com/q/hp?s=%5EGSPC+Historical+Prices)
+
+El alumno deberá utilizar las cotizaciones desde el primer día después del 1 de enero de 2021 (por ejemplo, el 4 de enero) hasta el 28 de febrero de 2023, o el último día de febrero disponible antes de esa fecha.
+
+Una vez obtenidas las cotizaciones, el alumno debe transformarlas en rentabilidades tomando la diferencia (a partir del segundo día disponible) de precios y dividiéndola por el precio anterior:
+
+A partir de estas rentabilidades, el alumno deberá construir una matriz de variables dependientes (rt) e independientes considerando las rentabilidades de los cinco días anteriores además de un vector de unos (1, rt-1,….,r t-5). Solo es posible construir esta matriz a partir de la SEXTA observación de rentabilidades (o SEPTIMA de precios), debiendo descartar las filas no completas.
+
+## Código
+
+El código para esta práctica está disponible en este repositorio. Te invitamos a explorarlo y a hacer cualquier pregunta o sugerencia que puedas tener.
+
+## Resultados
+
+Los resultados de nuestra práctica se presentarán en forma de gráficos y análisis en el notebook correspondiente. Esto incluirá la evaluación de la calidad de ajuste y la capacidad predictiva de nuestro modelo de Aprendizaje Automático.
+
+Esperamos que esta práctica te resulte interesante y que te ayude a entender mejor cómo se pueden aplicar los modelos de Aprendizaje Automático a problemas reales de predicción en el campo financiero.
